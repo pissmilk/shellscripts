@@ -1,9 +1,9 @@
 #! /bin/bash
 
 hdmi() {
-	source /home/milk/.screenlayout/hdmi.sh
+	source $HOME/.screenlayout/hdmi.sh
 	pactl set-card-profile alsa_card.pci-0000_00_1f.3 output:hdmi-stereo-extra1+input:analog-stereo
-	xwallpaper --zoom /home/milk/Pictures/Wallpapers/arch.png
+	xwallpaper --zoom $HOME/Pictures/Wallpapers/arch.png
 
 	while [ "$monitor" = "HDMI" ]; 
 	do	
@@ -12,9 +12,9 @@ hdmi() {
 }
 
 laptop() {
-	source /home/milk/.screenlayout/main.sh
+	source $HOME/.screenlayout/main.sh
 	pactl set-card-profile alsa_card.pci-0000_00_1f.3 output:analog-stereo+input:analog-stereo
-	xwallpaper --zoom /home/milk/Pictures/Wallpapers/arch.png
+	xwallpaper --zoom $HOME/Pictures/Wallpapers/arch.png
 
 	while [ "$monitor" = "laptop" ]; 
 	do	
